@@ -1,2 +1,2 @@
 # calculator
-a simple classic calculator simulation
+a simple classic calculator simulation implementing binary math
