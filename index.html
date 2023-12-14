@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Calculator</title>
-    <script src="calc.js"></script>
+<head>
+    <title>Simple Calculator</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <div class="calculator">
-      <div class="display">
-        <div class="display__history"></div>
-        <div class="display__result">0</div>
-      </div>
-      <div class="keypad">
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>+</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>-</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>*</button>
-        <button>C</button>
-        <button>0</button>
-        <button>.</button>
-        <button>/</button>
-        <button>%</button>
-        <button>=</button>
-      </div>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="display" readonly>
+
+        <div>
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <button class="button operator">/</button>
+        </div>
+
+        <div>
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="button operator">*</button>
+        </div>
+
+        <div>
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="button operator">-</button>
+        </div>
+
+        <div>
+            <button class="button">0</button>
+            <button class="button">.</button>
+            <button class="button" onclick="clearDisplay()">C</button>
+            <button class="button operator">+</button>
+        </div>
+
+        <div>
+            <button class="button" style="width: 248px;" onclick="calculate()">=</button>
+        </div>
     </div>
-  </body>
+
+</body>
 </html>
